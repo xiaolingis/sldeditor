@@ -94,7 +94,7 @@ public class LiteralPanel extends JPanel {
                 PanelField.getField(
                         ExpressionPanelv2.class,
                         "LiteralPanel.value",
-                        node.getType(), //(node.getType() == String.class) ? StringList.class : node.getType(),
+                        (node.getType() == String.class) ? StringList.class : node.getType(),
                         null,
                         node.getMaxStringSize(),
                         node.isRegExpString());
